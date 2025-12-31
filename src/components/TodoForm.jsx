@@ -12,20 +12,20 @@ export const TodoForm = ({ onAddTodo }) => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mb-6">
-      <div className="flex gap-2">
+    <form onSubmit={handleSubmit} className="mb-8">
+      <div className="flex gap-3">
         <input
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Add a new todo..."
-          className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          placeholder="✏️ Add a magical todo..."
+          className="flex-1 px-6 py-4 text-lg border-4 border-purple-300 rounded-2xl focus:outline-none focus:ring-4 focus:ring-pink-400 focus:border-pink-400 placeholder-purple-400 font-medium shadow-lg transition-all"
         />
         <button
           type="submit"
-          className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
+          className="px-8 py-4 text-lg font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-white rounded-2xl hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-purple-400 transition-all duration-200 active:scale-95"
         >
-          Add
+          ➕ Add
         </button>
       </div>
     </form>
